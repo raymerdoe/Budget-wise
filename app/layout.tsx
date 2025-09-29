@@ -21,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans antialiased">
-        <Suspense fallback={null}>{children}</Suspense>
+        <div className="min-h-screen bg-background text-foreground">
+          <Suspense fallback={null}>{children}</Suspense>
+        </div>
         <Analytics />
       </body>
     </html>

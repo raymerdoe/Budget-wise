@@ -9,18 +9,16 @@ export default function LandingPage() {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              BudgetWise
-            </div>
+            <div className="text-2xl font-bold gradient-text">BudgetWise</div>
           </div>
           <div className="flex items-center space-x-4">
             <Link href="/auth/login">
-              <Button variant="ghost" className="hover:bg-primary/10">
+              <Button variant="ghost" className="hover:bg-primary/10 text-foreground">
                 Login
               </Button>
             </Link>
             <Link href="/auth/sign-up">
-              <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg hover:shadow-primary/25 transition-all duration-300">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-primary/25 transition-all duration-300">
                 Get Started
               </Button>
             </Link>
@@ -32,7 +30,7 @@ export default function LandingPage() {
       <main className="container mx-auto px-4 py-16">
         <div className="text-center space-y-8">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-float">
+            <h1 className="text-5xl md:text-7xl font-bold gradient-text animate-float">
               Track Your Money,
               <br />
               <span className="text-4xl md:text-6xl">Level Up Your Life</span>
@@ -47,7 +45,7 @@ export default function LandingPage() {
             <Link href="/auth/sign-up">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-xl hover:shadow-primary/30 transition-all duration-300 text-lg px-8 py-6 animate-glow"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl hover:shadow-primary/30 transition-all duration-300 text-lg px-8 py-6 animate-glow"
               >
                 Start Tracking Free 💸
               </Button>
@@ -56,7 +54,7 @@ export default function LandingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary/30 hover:bg-primary/10 text-lg px-8 py-6 bg-transparent"
+                className="border-primary/30 hover:bg-primary/10 text-foreground text-lg px-8 py-6 bg-transparent"
               >
                 See Features 📈
               </Button>
@@ -67,9 +65,7 @@ export default function LandingPage() {
         {/* Features Section */}
         <section id="features" className="mt-32 space-y-16">
           <div className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Why BudgetWise?
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold gradient-text">Why BudgetWise?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Built for the digital generation with features that actually make sense
             </p>
@@ -109,16 +105,14 @@ export default function LandingPage() {
         {/* CTA Section */}
         <section className="mt-32 text-center space-y-8">
           <div className="glass-card p-12 max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Ready to Get Started?
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Ready to Get Started?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Join thousands of Gen Z users who are already taking control of their finances
             </p>
             <Link href="/auth/sign-up">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-xl hover:shadow-primary/30 transition-all duration-300 text-lg px-12 py-6"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl hover:shadow-primary/30 transition-all duration-300 text-lg px-12 py-6"
               >
                 Create Your Account 🚀
               </Button>
@@ -130,9 +124,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-12 mt-32 border-t border-border/50">
         <div className="text-center space-y-4">
-          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            BudgetWise
-          </div>
+          <div className="text-2xl font-bold gradient-text">BudgetWise</div>
           <p className="text-muted-foreground">Designed & Developed by Raymer Surio</p>
           <p className="text-sm text-muted-foreground">© 2025 BudgetWise. Built with love for the next generation.</p>
         </div>
